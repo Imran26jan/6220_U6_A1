@@ -1,0 +1,126 @@
+/* === Hero Section === */
+.package-hero {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px 60px;
+  text-align: center;
+  color: white;
+}
+
+.package-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.package-hero p {
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+
+/* === Button Section === */
+.package-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 20px;
+}
+
+.package-buttons button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  background-color: #f4f4f4;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.package-buttons button:hover {
+  background-color: #00b86b;
+  color: white;
+  border-color: #00b86b;
+}
+
+
+/* === Package Display Section === */
+.package-display {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  padding: 20px;
+  text-align: center;
+}
+
+.package-display h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.package-display .price {
+  font-size: 1.1rem;
+  color: #008000;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.package-display img {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.package-display ul {
+  list-style: disc;
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 20px;
+  color: #444;
+  font-size: 1rem;
+}
+
+.package-display ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.package-display p em {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* === Responsive Tweaks === */
+@media (max-width: 768px) {
+  .package-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .package-buttons button {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .package-buttons button {
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+
+  .package-display {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+}

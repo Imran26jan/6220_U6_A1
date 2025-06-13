@@ -1,0 +1,63 @@
+/* ===== navbar.css ===== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d6f5d6;
+  padding: 10px 20px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #104910;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+nav ul li a {
+  padding: 8px 16px;
+  border-radius: 25px;
+  background-color: #000;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #28a745;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .navbar nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar nav ul li {
+    margin: 8px 0;
+  }
+
+  .navbar nav ul li a {
+    padding: 10px 14px;
+    font-size: 14px;
+    display: block;
+  }
+}
+

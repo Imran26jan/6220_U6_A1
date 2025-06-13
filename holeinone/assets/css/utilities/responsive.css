@@ -1,0 +1,45 @@
+/* ===== responsive.css ===== */
+/* Media queries to support responsive layout */
+
+/* Tablets (min-width: 600px) */
+@media (min-width: 600px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  header nav ul {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+/* Desktops (min-width: 992px) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}

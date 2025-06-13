@@ -1,0 +1,80 @@
+/* ===== Hero Banner ===== */
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 150px 20px 100px;
+  text-align: center;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #828282;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+  background-color: #00ff66;
+  color: white;
+}
+
+/* ===== Quick Links Section ===== */
+.quick-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 5%;
+  background-color: #f4f4f4;
+}
+
+.quick-box {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.quick-box img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.quick-box:hover img {
+  transform: scale(1.05);
+}
+
+.quick-label {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 8px 16px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.quick-label:hover {
+  background: #00b86b;
+}

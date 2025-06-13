@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Packages - Hole in One Golf Resort</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../assets/css/utilities/reset.css" />
+  <link rel="stylesheet" href="../assets/css/utilities/typography.css" />
+  <link rel="stylesheet" href="../assets/css/utilities/responsive.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components/navbar.css" />
+  <link rel="stylesheet" href="../assets/css/components/packages.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="../assets/images/hole-in-one-logo.png" alt="Hole in One Logo" height="60">
+    </div>
+    <nav>
+      <ul> <!-- Navigation Menu -->
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="golf-course.html">Golf Course</a></li>
+        <li><a href="packages.html" class="active">Packages</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+  <section class="package-hero" style="background-image: url('../assets/images/packages.html\ photo.jpg');">
+    <h1><span style="color:#06c206;">Personalized</span> <span style="color:#ffffff;">Packages</span></h1>   <!-- Hero section -->
+    <p>Choose a plan that fits your dream getaway.</p>
+  </section>
+
+  <!-- Buttons -->
+  <section class="package-buttons">
+ <h2>Select a Package</h2>
+    <button onclick="showPackage('five')">Five Rounds</button>
+    <button onclick="showPackage('triple')">Triple Tee</button>
+    <button onclick="showPackage('getaway')">Getaway Break</button>
+    <button onclick="showPackage('custom')">Custom Events</button>
+  </section>
+
+  <!-- Package displays -->
+  <section class="package-display" id="packageDisplay">
+      <h2>Package Details</h2>
+    <!-- JavaScript will insert content here -->
+  </section>
+</main>
+
+  <!-- Footer section --> 
+  <footer>
+    <p>Hole in One &copy; All rights reserved 2025</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    function showPackage(type) {
+      const display = document.getElementById("packageDisplay");
+      let content = "";
+
+      if (type === "five") {
+        content = `
+          <h2>Five Rounds Package</h2>
+          <p class="price">Total Price: $899 per person</p>
+          <p><em>(Price based on two guests sharing. Includes a 5-night stay and 5 rounds of championship golf.)</em></p>
+          <ul>
+            <li>Five-night stay in a luxury resort suite with full board</li>
+            <li>Five 18-hole championship rounds</li>
+            <li>Guaranteed tee time on the Sea View Course</li>
+            <li>Complimentary digital swing analysis and coaching</li>
+          </ul>
+        `;
+      } else if (type === "triple") {
+        content = `
+          <h2>Triple Tee Package</h2>
+          <p class="price">Total Price: $499 per person</p>
+          <p><em>(Includes 2-night stay, 3 rounds of golf, breakfast, and more.)</em></p>
+          <ul>
+            <li>Two-night stay in a double room with breakfast</li>
+            <li>Three 18-hole rounds including one Sea View Course (if available)</li>
+            <li>Complimentary buggy hire</li>
+            <li>20% discount at the Pro Shop</li>
+          </ul>
+        `;
+      } else if (type === "getaway") {
+        content = `
+          <h2>Getaway Break Package</h2>
+          <p class="price">Total Price: $349 per person</p>
+          <p><em>(Quick 1-night escape with meals and golf perks.)</em></p>
+          <ul>
+            <li>Overnight stay with full breakfast</li>
+            <li>Dinner at any of the resort’s restaurants</li>
+            <li>Access to any course (excluding Sea View)</li>
+            <li>Complimentary club hire</li>
+          </ul>
+        `;
+      } else if (type === "custom") {
+        content = `
+          <h2>Custom Events Package</h2>
+          <p class="price">Contact Us for Pricing</p>
+          <p><em>Tailored packages for weddings, events, corporate retreats, and more.</em></p>
+          <ul>
+            <li>Flexible accommodation and golf schedules</li>
+            <li>Dedicated event planning team</li>
+            <li>Fully customizable package options</li>
+            <li>Contact us to create your dream experience</li>
+          </ul>
+        `;
+      }
+
+      display.innerHTML = content;
+    }
+  </script>
+
+</body>
+</html>

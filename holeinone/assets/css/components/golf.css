@@ -1,0 +1,59 @@
+/* ===== golf-course.css ===== */
+
+.golf-hero {
+  background: url('../../images/golf-banner.jpg') no-repeat center center/cover;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.golf-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.golf-hero p {
+  font-size: 1.2rem;
+}
+
+.golf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.golf-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.golf-card:hover {
+  transform: translateY(-5px);
+}
+
+.golf-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.golf-card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.4rem;
+  color: #007b5e;
+}
+
+.golf-card p {
+  padding: 0 15px 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+
